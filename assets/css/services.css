@@ -1,0 +1,244 @@
+@import url(reset.css);
+@import url(layout.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+body{
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+header{
+    /* width: 100%; */
+height: 80vh;
+/* background: linear-gradient(180deg, #28364B 0%, rgba(40, 54, 75, 0.77) 46.44%, rgba(40, 54, 75, 0) 100%); */
+background-size: cover;
+background-position: 20% 75%;
+
+background-image: linear-gradient(180deg, #28364B 0%, rgba(40, 54, 75, 0.77) 46.44%, rgba(40, 54, 75, 0) 100%), url("/assets/img/slidergemi.jpg");
+
+}
+.logo-content {
+    margin-top: 80px;
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-bottom: 40px; */
+  width: 100%;
+ }
+ .social-icons ul{
+     display: flex;
+   gap: 20px;
+ }
+ .social-icons ul li a,.lang a.active{
+     color: #CEBD88;
+ 
+ }
+ .lang{
+     display: flex;
+     gap: 20px;
+   
+ }
+ 
+ .lang p a{
+     color: white;
+ }
+ .social-links{
+     width: 100%;
+     margin-top:60px  ;
+ }
+ .navbar-list{
+     display: flex;
+   justify-content: space-around;
+     border-bottom: 1px solid #D9D9D9;
+     padding: 0 20px;
+ }
+ .navbar-list li{
+     margin-bottom: 20px;
+ }
+ .navbar-list .list-item:nth-child(3) i{
+     color: #CEBD88;
+    
+ }
+ .navbar-list  li a{
+   
+ font-size: 18px;
+ font-weight: 500;
+ line-height: 21px;
+ color: white;
+ 
+ }
+ .about-heading{
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .about-heading h1{
+ 
+font-weight: 600;
+line-height: 30px;
+    color: #ffffff;
+    font-size: 32px;
+ }
+ /* *responsive-navbar */
+ .res-btn{
+     display: none;
+ position: absolute;
+ right: 100px;
+ top: 40px;
+ cursor: pointer;
+ }
+ .res-btn button{
+     border: none;
+     background-color: transparent;
+     font-size: 30px;
+     color: white;
+ }
+ .responsive-navbar{
+     display: none;
+     position: fixed;
+     top: -300px;
+     left: 0;
+     right: 0;
+     background-color: #ffffff;
+    
+ }
+ .responsive-navbar.active{
+     top: 0px;
+ }
+ .responsive-navbar .list-item{
+     border-bottom: 1px solid ;
+     padding: 8px;
+     transition: all .3s;
+ }
+ .responsive-navbar .list-item:hover{
+     background-color: #ffedb6;
+ }
+ .responsive-navbar .list-item a{
+     color: #28364B;
+     font-size: 18px;
+ font-weight: 500;
+ line-height: 21px;
+ }
+/* *agency-section */
+.ship-agency{
+    padding:  50px 0 30px;
+    background-image:url(/assets/img/card4img.png) ;
+    background-size: cover;
+    background-color: #fff7e0;
+}
+.agency-box{
+    padding: 30px;
+}
+
+.agency-box .little-heading{
+    font-family: Dancing Script;
+font-size: 20px;
+font-weight: 700;
+line-height: 24px;
+color: #CEBD88;
+}
+.agency-main-heading{
+font-size: 28px;
+font-weight: 600;
+line-height: 34px;
+
+}
+.agency-desc-info{
+    padding: 30px 0;
+}
+.agency-desc,.ship-desc{
+line-height: 30px;
+}
+.agency-img{
+    border: 10px solid #CEBD88;
+}
+/* * agency-role-section */
+.agency-roles{
+    background-image: url(/assets/img/countup.jpg);
+    background-size: cover;
+    padding: 40px 0;
+    width: 100%;
+}
+p.number{
+    font-family: Cinzel;
+font-size: 120px;
+font-weight: 400;
+line-height: 161.76px;
+text-align: left;
+color: #CEBD88;
+}
+p.desc-info{
+line-height: 32px;
+
+}
+.agency-left {
+position: relative;
+right: -60%;
+
+}
+.agency-role-box{
+    display: flex;
+    align-items: center;
+    width: 50%;
+   
+}
+
+/* *video-img section */
+.img-video{
+    background-color: #fff7e0;
+    padding: 30px 0 50px;
+}
+.video-img-box{
+    padding: 10px;
+}
+.img-boxses,.content-info{
+    padding: 6px;
+}
+.img-boxses img{
+    height: 90px;
+}
+.content-info p{
+font-size: 14px;
+line-height: 26px;
+padding-top: 10px;
+
+}
+.video-watch{
+    padding: 10px;
+}
+.video-watch img{
+    height: 180px;
+}
+ /* *footer */
+.footer{
+    background-color: #28364B;
+padding: 50px;
+
+}
+.footer-links,.footer-img{
+    padding:0 40px;
+}
+.footer-links ul li  a{
+font-size: 18px;
+font-weight: 500;
+line-height: 1.6;
+color: white;
+}
+
+.footer-phone ul li,.footer-phone ul li a {
+    line-height: 2;
+font-weight: 500;
+/* line-height: 30px; */
+/* padding: 4px 0; */
+color: white;
+}
+.telephone,.mail-item{
+    display: flex;
+    gap: 10px;
+ 
+}
+.tel-desc, .mail{
+    color: #CEBD88;
+}
